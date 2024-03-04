@@ -105,10 +105,34 @@ button:hover {
   gap: 0.5rem;
 }
 
-.banner-img > img {
+#banner-desktop {
   width: 100%;
+}
+
+#banner-mobile {
+  display: none;
 }
 
 .hide {
   display: none;
+}
+
+@media (max-width: 844px) {
+  #banner-desktop {
+    display: none;
+  }
+
+  #banner-mobile {
+    display: block;
+  }
+
+  .card {
+    width: 90%;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .descriptions {
+    padding: 2rem 1rem;
+  }
 }
